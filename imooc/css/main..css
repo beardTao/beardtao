@@ -1,0 +1,48 @@
+	@charset "gb2312";
+/* CSS Document */
+    *{
+         margin:0;
+         padding:0;}
+    body{
+        width:1000px;
+        margin: 0 auto;
+        
+    }
+    .top{
+        margin:10px 0 0 20px;
+    }
+    .top_left{
+        background:url("http://img.mukewang.com/53edadad0001efe202000070.jpg"
+) no-repeat;
+height:85px;
+width:200px;
+float:left;
+    }
+    .top_right{
+        width:750px;
+        height:85px;
+    }
+    .top_right li{
+        list-style-type:none;
+        float:left;
+        width:80px;
+        height:40px;
+        line-height:40px;
+        text-align:center;
+        margin:15px 0  0 0;
+    }
+    .top_right a{
+        display:inline-block;
+        text-decoration:none;
+        width:80px;
+    }
+    
+    .top_right a:link,.top_right a:visited{
+        color:black;
+    }
+    .top_right a:hover,.top_right a:active{
+        background-color:red;}
+    .ad {
+  height: 320px;
+  margin-top: 5px;}
+    

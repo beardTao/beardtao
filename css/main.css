@@ -1,0 +1,428 @@
+*{
+	margin: 0;
+	padding: 0
+}
+body{
+	margin: 0;
+	background-color: #FFF;
+	font-family: 'Ubuntu', sans-serif;
+	overflow-y:hidden;
+}
+b{
+	color: #CA8EFE;
+}
+
+a{
+	transition: all 0.5s;
+}
+.float-clear{
+	clear: both;
+}
+.bg-icon{
+	background: transparent url("../images/icons.png") scroll no-repeat 0 0;
+}
+nav{
+	position: fixed;
+	z-index: 1000;
+	left: -100px;
+	top: 160px;
+	transition: all 0.5s 0.8s;
+}
+body.open nav{
+	left: 0;
+}
+nav ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	opacity: 0.4;
+}
+nav ul,
+nav ul a{
+	transition: all 0.5s;
+}
+nav ul:hover{
+	opacity: 0.8;
+}
+nav ul a{
+	display: inline-block;
+	min-width: 20px;
+	line-height: 40px;
+	text-align: center;
+	padding: 0 10px;
+	text-decoration: none;
+	color: #CCC;
+	background-color: #34495E;
+}
+nav ul a[href="#skill"]{
+	background-color: #2980B9;
+}
+nav ul a[href="#about"]{
+	background-color: #C0392B;
+}
+nav ul a[href="#works"]{
+	background-color: #27AE60;
+}
+nav ul a[href="#contact"]{
+	background-color: #2C3E50;
+}
+nav ul a span{
+	display: none;
+}
+nav ul a:hover{
+	color: #FFF;
+	padding: 0 20px;
+}
+nav ul a.current span,
+nav ul a:hover span{
+	display: inline-block;
+}
+body > section{
+	width: 100%;
+	height: 700px;
+	overflow: hidden;
+}
+body #skill,
+body #about,
+body #works,
+body #contact{
+	display: none;
+}
+#skill,
+#works{
+	background-color: #EEE;
+}
+body.open #skill,
+body.open #about,
+body.open #works,
+body.open #contact{
+	display: block;
+}
+section .page-title{
+	font-size: 34px;
+	line-height: 40px;
+	margin: 20px 0;
+}
+section .page-title:last-child{
+	text-align: right;
+}
+section .content{
+	width: 1000px;
+	margin: 0px auto;
+}
+/* page cover */
+#cover{
+	position: absolute;
+	top: 0;
+	z-index: 100;
+}
+.mask{
+	width: 100%;
+	min-width: 1000px;
+	height: 700px;
+	position: absolute;
+	background-color: #EEE;
+	transform: rotate(330deg);
+}
+.mask,
+#home,
+#cover + #home #info1,
+#cover + #home #info2,
+#cover + #home #info3,
+#avatar{
+	transition: all 0.5s ease 0.2s;
+}
+#mask1{
+	top: 0;
+	margin-top: -360px;
+	left: -20%;
+	-webkit-box-shadow: -4px 4px 4px #DDE;
+	-moz-box-shadow: -4px 4px 4px #DDE;
+	box-shadow: -4px 4px 4px #DDE;
+}
+#mask2{
+	top: 0;
+	margin-top: 360px;
+	left: 20%;
+	box-shadow: 4px -4px 4px #DDE;
+}
+#cover .content{
+	padding: 30px 0 ;
+	position: relative;
+	height: 700px;
+}
+#cover .content h2{
+	font-size: 30px;
+	color: #333;
+}
+#cover .content p{
+	margin-top: 20px;
+	padding-left: 20px;
+	font-size: 18px;
+	color: #66F;
+}
+#cover .content p#open{
+	display: inline-block;
+	cursor: pointer;
+	margin-top: 300px;
+	margin-left: 750px;
+	padding: 10px;
+	border: solid 2px #CCC;
+	color: #666;
+	text-align: right;
+}
+#cover .content p#open:hover{
+	border-color: #99F;
+}
+/* cover.open */
+body.open #cover #mask1{
+	left: -80%;
+	box-shadow: -4px 4px 4px #222;
+}
+body.open #cover #mask2{
+	left: 80%;
+	box-shadow: 4px -4px 4px #222;
+}
+body.open #cover .content{
+	display: none;
+}
+/* page home */
+#home #info1,
+#home #info2,
+#home #info3{
+	opacity: 0;
+}
+#home{
+	background-color: #FFF;
+	color: #EEE;
+}
+body.open #home{
+	background-color: #333;
+}
+body.open #home #info1,
+body.open #home #info2,
+body.open #home #info3{
+	position: relative;
+	opacity: 1;
+	z-index: 1000;
+}
+#avatar{
+	display: inline-block;
+	border: solid 10px #EEE;
+	margin-left: 280px;
+	margin-top: 140px;
+	float: left;
+	position: relative;
+}
+body.open #home #avatar{
+	box-shadow: 4px 4px 4px #222;
+}
+#info1{
+	float: left;
+	margin-left: 110px;
+	margin-top: 120px;
+}
+#info2{
+	margin-left: 540px;
+	margin-top: 40px;
+	font-size: 24px;
+	font-weight: bold;
+	background-position: 84px 5px;
+}
+#info3{
+	margin-left: 150px;
+}
+a{
+	color: #AAF;
+}
+a:hover{
+	color: #008EFE;
+}
+/* page about */
+#about{
+color: #333;
+padding-top: 30px;
+opacity: 0;
+}
+
+#about.showme{
+	opacity: 1;
+	transition: all 1s;
+}
+.personal-skill{
+	width: 100%;
+}
+#about ul{
+	list-style: none;
+}
+#about ul li{
+	font-size: 13px;
+	line-height: 16px;
+	margin: 10px 0 ;
+}
+#about h1{
+	margin-bottom: 20px;
+}
+#about dt{
+	font-size: 16px;
+	font-weight: 400;
+}
+#about dd{
+	font-size: 13px;
+	line-height: 16px;
+	margin: 10px 0 ;
+}
+/*page works*/
+#works .dada{
+	width: 100%;
+	height: 150px;
+	position: relative;
+	
+}
+#works  h2{
+    font-size: 36px;
+    font-weight: 500;
+    padding: 40px 0;
+    position: absolute;
+    color: #fff;
+    width: 0px;
+    overflow: hidden;
+    top: 0;
+    left: 50%;
+    margin-left: -175px;
+    white-space: nowrap;
+}
+#works  h2.dadachange{	
+	width: 300px;
+	transition: all 3s ;
+}
+#works .content span{
+    font-size: 45px;
+    color: #ff530a;
+    font-weight: 400;
+}
+#works .content ul{
+	list-style: none;
+}
+.list-project{
+	float: left;
+	width: 500px;
+}
+.list-project .works-img,.list-project .works-brief{
+	float: left;
+	width: 250px;
+	height: 200px;
+	background-color: pink;
+}
+.list-project .works-img{
+	overflow: hidden;
+}
+.list-project .works-brief{
+	width: 200px;
+	height: 180px;
+	padding: 20px 0 0 50px;
+	position: relative;
+	background-color: #fff;
+}
+.works-brief h3{
+	color: #323232;
+    padding: 0 40px 20px;
+    line-height: 26px;
+    position: relative;
+}
+.works-brief h3::before{
+	content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 90px;
+    height: 1px;
+    background: #CBC4B5;
+    margin-left: -70px;
+}
+.works-brief p{
+	padding-top: 25px;
+    color: #959595;
+	font-size: 14px;
+    line-height: 20px;
+}
+.brief-right::before{
+	content: '';
+	position: absolute;
+	left: 0;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    background: #fff;
+    transform: rotate(45deg);
+    margin-left: -15px;
+
+}
+.brief-left::before{
+	content: '';
+	position: absolute;
+	right: 0;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    background: #fff;
+    transform: rotate(45deg);
+    margin-right: -15px;
+    z-index: 1;
+}
+/*给图片增加动画效果*/
+li.list-project img{
+	transition: all .8s ease-out;
+}
+li.list-project:hover img{
+	transform: scale(1.2) rotate(10deg);
+}
+
+/* page contact */
+#contact{
+	background-color: #333;
+	color: #EEE;
+}
+#contact h3,
+#contact ul{
+	width: 300px;
+	border: solid 4px #6B6B6B;
+	line-height: 50px;
+}
+#contact h3{
+	height: 50px;
+	margin: 150px auto 15px;
+	text-align: center;
+}
+#contact ul{
+	height: 150px;
+	margin: 0 auto;
+	padding: 0;
+}
+#contact ul li{
+	list-style: none;
+	border-top: solid 2px #6B6B6B;
+	font-size: 18px;
+	padding-left: 50px;
+}
+#contact ul li.github{
+	background-position: 10px -85px;
+}
+#contact ul li.email{
+	background-position: 10px -135px;
+}
+#contact ul li.phone{
+	background-position: 10px -185px;
+}
+#contact ul li:first-child{
+	border: 0;
+}
+#contact ul li a{
+	color: #EEE;
+	text-decoration: none;
+}
+#contact ul li a:hover{
+	color: #6B6B6B;
+}
