@@ -48,61 +48,10 @@ window.onload = function(){
 			change()
 		}
 	},2000)
-	/*var timer = null;
-	timer = setInterval(sliderTransition,300);
-	function sliderTransition(){
-		jd_slider.children[0].style.transition = "(0,-100,0)";
-		
-	}*/
-	/*var slider_img = document.getElementById('slider_img');
-	setInterval(function(){
-		jd_slider.children[0].style.left = 
-	},2000)
-	var lunbo = document.getElementById('lunbo');*/
-	/*var timer = setInterval(move1,2000);
-	var lunboLis = lunbo.children;
-	var Y = 0	*/
-	/*function move1(){
-		/*Y < -60 ? Y=0 : Y=(Y-30);
-		console.log(Y)
-		lunbo.style.transform = "translate3d(0,"+Y+"px,0)";*/
-		/*var lisLast = lunboLis[0].cloneNode(true);
-		lunbo.removeChild(lunboLis[0]);
-		lunbo.appendChild(lisLast);*/
-		// lunbo.style.transform = "translate3d(0,30px,0)";
-		// lunboLis.push(lunboLis.pop(lunboLis[0]));
-		/*if (Y<-60) {
-			Y = 0;
-			lunbo.style.top = Y;
-		}
-		else{			
-			Y -= 30; 
-			lunbo.style.transition = "all 0.5s";
-			lunbo.style.top = Y+'px';
-		}
-	}*/
+	
 	var num = 0; //控制左侧值  left
     var timer = null;  // 定时器
-/*     function startmove(){
- 	 num--;
- 	time=setInterval(scrollup,50);
- }
- function scrollup() {
- 	if (num%30==0) {
- 	
- 		clearInterval(time);
- 		 setTimeout(startmove,2000);
 
- 	}else{
- 		lunbo.style.top = num+"px" ;
-			 num--;
-			 if(num<=-90){
-			 	num=0;
-					lunbo.style.top = num; 
-				 }
-			 }
- }
-	 setTimeout(startmove,2000);*/
 	 function startmove(){
 	 	
 	 	timer = setInterval(scrollup,50);
