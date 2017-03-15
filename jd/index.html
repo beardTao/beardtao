@@ -62,7 +62,7 @@
         </div>
     </div>
 </div><!--头部导航结束-->
-<script>
+<!-- <script>
     window.onload = function(){
         var login = document.getElementById('login');
         var mask = document.getElementById('mask');
@@ -78,7 +78,7 @@
         }
 
     }
-</script>
+</script> -->
 <!--顶部banner-->
 <div class="topbanner" id="topbanner">
     <div class="w">
@@ -190,7 +190,12 @@
                 </div>
 
             </div>
-
+            <!-- <div class="items1">
+              <img src="images/items-1.png" alt="">
+            </div>
+            <div class="items1">
+              <img src="images/items-2.png" alt="">
+            </div> -->
         </div>
         </div>
         <div class="navitems">
@@ -218,20 +223,26 @@
 </div>
 
 <div class="w main clearfix">
-    <div class="slider">
-        <a href="#"><img src="images/slider1.jpg" alt=""> </a>
+    <div class="slider" id="slider">
+        <ul class="slider-ul-1">
+          <li class="current"><a href="#"><img src="images/slider1.jpg" alt="" width="730" height="454"></a></li>
+          <li><a href="#"><img src="images/slider2.jpg" alt="" width="730" height="454"></a></li>
+          <li><a href="#"><img src="images/slider3.jpg" alt="" width="730" height="454"></a></li>
+          <li><a href="#"><img src="images/slider4.jpg" alt="" width="730" height="454"></a></li>
+          <li><a href="#"><img src="images/slider5.jpg" alt="" width="730" height="454"></a></li>
+        </ul>
         <div class="arrow">
-            <div class="arrow-l"><</div>
-            <div class="arrow-r">></div>
+            <div class="arrow-l" id="arrow_l"><</div>
+            <div class="arrow-r" id="arrow_r">></div>
         </div>
-        <div class="circle">
+        <div class="circle" id="circle">
             <ul>
-                <li class="current">1</li>
+                <!-- <li class="current">1</li>
                 <li>2</li>
                 <li>3</li>
                 <li>4</li>
                 <li>5</li>
-                <li>6</li>
+                <li>6</li> -->
             </ul>
         </div>
     </div>
@@ -310,15 +321,7 @@
         </div>
     </div>
 </div>
-<script>
-    window.onload = function() {
-        var ul = document.getElementById('jd-serve-ul');
-        var is = ul.getElementsByTagName('i');
-        for (i = 0; i < is.length; i++) {
-            is[i].style.backgroundPosition ="0  " + (-i * 25) + "px";
-        }
-    }
-</script>
+
 
 <!--底部开始-->
   <div class="footer">
@@ -422,12 +425,6 @@
 
       </div>
   </div>
-<script>
-    var jd_close =document.getElementById('jd_close');
-    var topbanener=document.getElementById('topbanner');
-    jd_close.onclick=function(){
-        topbanner.style.display='none';
-    }
-</script>
+<script src="js/main.js"></script>
 </body>
 </html>

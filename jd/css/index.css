@@ -22,8 +22,25 @@
     margin: 12px 0 0 220px;
     float: left;
     position: relative;
+    overflow: hidden;
 }
-
+.main .slider .slider-ul-1 {
+    width: 100%;
+    position: relative;
+}
+.main .slider .slider-ul-1 li{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 0;
+    background-color: #fff;
+}
+.main .slider .slider-ul-1 li.current{
+    opacity: 1;
+    z-index: 1;
+    transition: all .3s  ease-in ;
+}
 .main .news{
     width: 248px;
     height: 451px;
@@ -41,7 +58,9 @@
     color: #fff;
     text-align: center;
     top: 50%;
-    margin-top:-31px;;
+    margin-top:-31px;
+    cursor: pointer;
+    z-index: 2;
 }
 .arrow-l{
     left: 0;
@@ -58,7 +77,7 @@
     left: 50%;
     bottom: 8px;;
     margin-left: -66px;
-
+    z-index: 2;
 }
 .main .circle li{
     float: left;

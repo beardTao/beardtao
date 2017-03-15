@@ -345,7 +345,14 @@ s,i,em{font-style:normal;text-decoration:none;}
     height:465px;
     background-color: #C81623;
 }
-
+.items1{
+    position: absolute;
+    top: 0;
+    left: 208px;
+}
+.items1 img{
+    width: 1000px;
+}
 .navitems{
     float: left;
     width:680px;
@@ -367,6 +374,7 @@ s,i,em{font-style:normal;text-decoration:none;}
     padding:0 15px 0 10px;
     font: 14px/31px "微软雅黑";
     color: #fff;
+    cursor: pointer;
 }
 
 .dropdown .dd h3{
