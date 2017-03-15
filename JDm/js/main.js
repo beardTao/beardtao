@@ -24,10 +24,13 @@ window.onload = function(){
 	}
 	var ul2 = jd_slider.children[1];
 	ul2.children[0].classList.add('active');
-	window.onresize = function(){
+	function resize(){
 		jd_slider.children[0].style.height = jd_slider.children[0].children[0].offsetHeight + 'px';
 	}
-	onresize();
+	window.onresize = function(){
+		resize();
+	}
+	resize();
 	var inow = 0;
 	function change(){
 		for (var i = 0; i < lis.length; i++) {
